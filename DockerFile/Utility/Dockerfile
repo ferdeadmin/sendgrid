@@ -8,7 +8,6 @@ RUN mkdir -p /data/config/
 COPY ["Utility.API/Utility.API.csproj", "Utility.API/"]
 COPY ["DataAccessLayer/DataAccessLayer.csproj", "DataAccessLayer/"]
 COPY ["DomainModel/DomainModel.csproj", "DomainModel/"]
-COPY ["BusinessAccessLayer/BusinessAccessLayer.csproj", "BusinessAccessLayer/"]
 RUN dotnet restore "Utility.API/Utility.API.csproj"
 COPY . .
 WORKDIR "/src/Utility.API"
